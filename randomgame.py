@@ -17,20 +17,21 @@ def run_guess(start, end, guess, jackpot):
 		print('arguments mudt all be numbers')
 		return False
 
+# useful only for other version
 
-def play_game(start, end, jackpot):
-	while True:
-		user_input = input(f'Try to guess a number between {start} and {end}: \n')
-		try:
-			user_guess = int(user_input)
-			if user_guess == jackpot :
-				print('Well done !! You won the game !') 
-				break
-			else :
-				print('Bad luck ! Try again.')
-		except ValueError:
-			print('Please enter a number.')
-			continue
+# def play_game(start, end, jackpot):
+# 	while True:
+# 		user_input = input(f'Try to guess a number between {start} and {end}: \n')
+# 		try:
+# 			user_guess = int(user_input)
+# 			if user_guess == jackpot :
+# 				print('Well done !! You won the game !') 
+# 				break
+# 			else :
+# 				print('Bad luck ! Try again.')
+# 		except ValueError:
+# 			print('Please enter a number.')
+# 			continue
 
 if __name__ == '__main__':
 	try:
