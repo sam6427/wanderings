@@ -2,6 +2,8 @@ import sys
 from PIL import Image
 from pathlib import Path
 
+#this version uses pathlib rather than os
+
 #python3 JPGtoPNGconverter.py arg1 arg2
 #arg1 : folder name, e.g pokedex/
 #arg2 : folder we want to create, e.g new/

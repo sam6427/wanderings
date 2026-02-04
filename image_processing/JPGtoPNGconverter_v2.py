@@ -1,6 +1,9 @@
 import sys, os
 from PIL import Image
 
+#as an exercise, I also wrote this version 
+#which uses os rather than pathlib
+
 current_folder = sys.argv[1]
 new_folder = sys.argv[2]
 
