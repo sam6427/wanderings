@@ -18,6 +18,12 @@ class TestMain(unittest.TestCase):
 	def test_run_guess_bad_input(self):
 		self.assertFalse(randomgame.run_guess(1,10, 'a', 3))
 
+	def test_run_guess_out_of_range(self):
+		for i in range(1,10):
+			start = i
+			end = 3*i
+			guess = 4*i
+			self.assertFalse(randomgame.run_guess(start, end, guess, start+1))
 
 	def tearDown(self):
 		print('this test is now over')
